@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <div class="main">
         <div class="login-screen"></div>
         <div class="login-center">
-                <div class="container min-height" style="margin-top: 20px;">
-                    <div class="row">
-                        <div class="col-xs-4 col-md-offset-8">
-                            <div class="login" id="card">
-                                <div class="front signin_form"> 
+            <div class="container min-height" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-xs-4 col-md-offset-8">
+                        <div class="login" id="card">
+                            <div class="front signin_form">
                                 <p>Login Your Account</p>
                                 <form class="login-form">
                                     <div class="form-group">
@@ -26,17 +26,22 @@
                                         </div>
                                     </div>
                                     <div class="checkbox">
-                                    <label><input type="checkbox">Remember me next time.</label>
+                                        <label><input type="checkbox">Remember me next time.</label>
                                     </div>
-                                    
+
                                     <div class="form-group sign-btn">
                                         <input type="submit" class="btn" value="Log in">
-                                        <p><a href="#" class="forgot">Can't access your account?</a></p>
-                                        <p><strong>New to TimeInfo?</strong><br><a href="#" id="flip-btn" class="signup signup_link">Sign up for a new account</a></p>
+                                        <p>
+                                            <a href="#" class="forgot">Can't access your account?</a>
+                                        </p>
+                                        <p>
+                                            <strong>New to TimeInfo?</strong><br>
+                                            <a href="#" id="flip-btn" class="signup signup_link">Sign up for a new account</a>
+                                        </p>
                                     </div>
                                 </form>
-                                </div>
-                                <div class="back signup_form" style="opacity: 0;"> 
+                            </div>
+                            <div class="back signup_form" style="opacity: 0;">
                                 <p>Sign Up for Your New Account</p>
                                 <form class="login-form">
                                     <div class="form-group">
@@ -49,8 +54,12 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-btn"><button type="button" class="btn btn-cyan"><span class="fa fa-refresh"></span></button></span>
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-cyan">
+                                                    <span class="fa fa-refresh"></span>
+                                                </button>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -69,27 +78,193 @@
                                             </span>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group sign-btn">
                                         <input type="submit" class="btn" value="Sign up">
                                         <br><br>
-                                        <p>You have already Account So <a href="#" id="unflip-btn" class="signup">Log in</a></p>
+                                        <p>You have already Account So
+                                            <a href="#" id="unflip-btn" class="signup">Log in</a>
+                                        </p>
                                     </div>
                                 </form>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'login'
+    name: 'login',
+    mounted: function() {
+
+        $("#card").flip({
+            trigger: 'manual'
+        })
+
+        $(".signup_link").click(function() {
+
+            $(".signin_form").css('opacity', '0')
+            $(".signup_form").css('opacity', '100')
+
+
+            $("#card").flip(true)
+
+            return false;
+        })
+
+        $("#unflip-btn").click(function() {
+
+            $(".signin_form").css('opacity', '100')
+            $(".signup_form").css('opacity', '0')
+
+            $("#card").flip(false)
+
+            return false;
+
+        })
+    }
 }
 </script>
-<style lang="scss">
+<style lang="scss" >
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Raleway',sans-serif;
+    position: relative;
+    /*background: rgba(0, 0, 0, 0) url("../img/ptn.png") repeat scroll 0 0;*/
+}
+
+.in-page {
+    min-height: 520px;
+}
+
+.main {
+    position: relative;
+}
+
+a {
+    color: #1b5a7c;
+}
+
+a:hover, a:focus {
+    color: #1b5a7c;
+}
+
+.btn-cyan {
+    background-color: #1b5a7c;
+    color: #fff;
+}
+
+.btn-cyan:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.form-control:focus {
+    border-color: #1b5a7c;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(24, 204, 162, 0.6);
+    outline: 0 none;
+}
+
+.min-height {
+    min-height: 380px;
+}
+
+.login-screen {
+    background-image: url('../assets/login.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.login-screen:before {
+    content: "";
+    background: rgba(0,0,0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.login-center {
+    text-align: left;
+}
+
+.login {
+    width: 320px;
+    color: #fff;
+}
+
+.login .login-form {
+    text-align: left;
+}
+
+.login label {
+    color: #fff;
+}
+
+.login-form .input-group .form-control {
+    background: none;
+    height: 44px;
+    color: #ddd;
+}
+
+.login-form .input-group .input-group-addon {
+    background: none;
+}
+
+.login-form .input-group .input-group-addon .glyphicon {
+    color: #1b5a7c;
+}
+
+.login-form .input-group .form-control::-moz-placeholder {
+    color: #fff;
+    opacity: 0.3;
+}
+
+.login .sign-btn input.btn {
+    background: #1b5a7c;
+    border-color: #1b5a7c;
+    color: #fff;
+    width: 180px;
+}
+
+.login .sign-btn a {
+    text-decoration: none;
+}
+
+.login .checkbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login .forgot {
+    display: inline-block;
+    margin: 20px 0;
+}
 </style>
