@@ -8,21 +8,29 @@
                         <div class="login" id="card">
                             <div class="front signin_form">
                                 <p>{{mensajeLogin}}</p>
-                                <form class="login-form">
+                                <form class="login-form" @submit.prevent="validateBeforeSubmit">
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <input type="email" class="form-control" placeholder="Ingresa tu usuario">
+                                            <input type="text" name="user" class="form-control" v-model="user" v-validate="'required'" placeholder="Ingresa tu usuario">
                                             <span class="input-group-addon">
                                                 <i class="glyphicon glyphicon-user"></i>
                                             </span>
                                         </div>
+                                        <div :class="{error:true}">
+                                             <i v-show="errors.has('user')" class="fa fa-warning"></i>
+                                             <span v-show="errors.has('user')">{{ errors.first('user') }}</span>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña">
+                                            <input type="password" name="password" class="form-control"  v-model="password" v-validate="'required'" placeholder="Ingresa tu contraseña">
                                             <span class="input-group-addon">
                                                 <i class="glyphicon glyphicon-lock"></i>
                                             </span>
+                                        </div>
+                                        <div :class="{error:true}">
+                                             <i v-show="errors.has('password')" class="fa fa-warning"></i>
+                                             <span v-show="errors.has('password')">{{ errors.first('password') }}</span>
                                         </div>
                                     </div>
                                     <div class="checkbox">
@@ -48,6 +56,8 @@
 </template>
 
 <script>
+
+
 export default {
     name: 'login',
     data(){
@@ -55,7 +65,9 @@ export default {
             mensajeLogin:'Bienvenido',
             recordar: 'Recordar',
             forgot: 'No puedes acceder a tu cuenta?',
-            btnLogin: 'Ingresar'
+            btnLogin: 'Ingresar',
+            user: '',
+            password: ''
         }
     },
     mounted: function() {
@@ -85,6 +97,18 @@ export default {
             return false;
 
         })
+    },
+    methods: {
+        validateBeforeSubmit: function() {
+            this.$validator.validateAll().then((result) => {
+                if (result) {                    
+                    alert('From Submitted!');
+                    return;
+                }
+
+                alert('Correct them errors!');
+            })
+        }
     }
 }
 </script>
@@ -105,6 +129,10 @@ html, body {
 body {
     font-family: 'Raleway',sans-serif;
     position: relative;
+}
+
+.error{
+    color: red;
 }
 
 .in-page {
