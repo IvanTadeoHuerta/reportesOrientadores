@@ -7,11 +7,11 @@
                     <div class="col-xs-4 col-md-offset-8">
                         <div class="login" id="card">
                             <div class="front signin_form">
-                                <p>Login Your Account</p>
+                                <p>{{mensajeLogin}}</p>
                                 <form class="login-form">
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <input type="email" class="form-control" placeholder="Type your email">
+                                            <input type="email" class="form-control" placeholder="Ingresa tu usuario">
                                             <span class="input-group-addon">
                                                 <i class="glyphicon glyphicon-user"></i>
                                             </span>
@@ -19,74 +19,25 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <input type="password" class="form-control" placeholder="Type your password">
+                                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña">
                                             <span class="input-group-addon">
                                                 <i class="glyphicon glyphicon-lock"></i>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="checkbox">
-                                        <label><input type="checkbox">Remember me next time.</label>
+                                        <label><input type="checkbox">{{recordar}}</label>
                                     </div>
 
                                     <div class="form-group sign-btn">
-                                        <input type="submit" class="btn" value="Log in">
+                                        <input type="submit" class="btn" :value="btnLogin">
                                         <p>
-                                            <a href="#" class="forgot">Can't access your account?</a>
-                                        </p>
-                                        <p>
-                                            <strong>New to TimeInfo?</strong><br>
-                                            <a href="#" id="flip-btn" class="signup signup_link">Sign up for a new account</a>
+                                            <a href="#" class="forgot">{{ forgot }}</a>
                                         </p>
                                     </div>
                                 </form>
                             </div>
                             <div class="back signup_form" style="opacity: 0;">
-                                <p>Sign Up for Your New Account</p>
-                                <form class="login-form">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Username">
-                                            <span class="input-group-addon">
-                                                <i class="glyphicon glyphicon-user"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-btn">
-                                                <button type="button" class="btn btn-cyan">
-                                                    <span class="fa fa-refresh"></span>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <input type="password" class="form-control" placeholder="Confirm Password">
-                                            <span class="input-group-addon">
-                                                <i class="glyphicon glyphicon-lock"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <input type="email" class="form-control" placeholder="Email">
-                                            <span class="input-group-addon">
-                                                <i class="glyphicon glyphicon-envelope"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group sign-btn">
-                                        <input type="submit" class="btn" value="Sign up">
-                                        <br><br>
-                                        <p>You have already Account So
-                                            <a href="#" id="unflip-btn" class="signup">Log in</a>
-                                        </p>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -99,6 +50,14 @@
 <script>
 export default {
     name: 'login',
+    data(){
+        return {
+            mensajeLogin:'Bienvenido',
+            recordar: 'Recordar',
+            forgot: 'No puedes acceder a tu cuenta?',
+            btnLogin: 'Ingresar'
+        }
+    },
     mounted: function() {
 
         $("#card").flip({
