@@ -5,7 +5,7 @@ const mensajes = {
         required: () => 'Nombre de usuario es requerido'
       },
       password: {
-        required: () => 'Contraseña es requerida2'
+        required: () => 'Contraseña es requerida'
       }
     }
   }

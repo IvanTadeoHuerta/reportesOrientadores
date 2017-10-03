@@ -7,7 +7,7 @@
                     <div class="col-xs-4 col-md-offset-8">
                         <div class="login" id="card">
                             <div class="front signin_form">
-                                <p>{{mensajeLogin}}</p>
+                                <p><b>{{mensajeLogin}}</b></p>
                                 <form class="login-form" @submit.prevent="validateBeforeSubmit">
                                     <div class="form-group">
                                         <div class="input-group">
@@ -39,6 +39,9 @@
 
                                     <div class="form-group sign-btn">
                                         <input type="submit" class="btn" :value="btnLogin">
+                                        <div :class="{error:true}" v-show="!errorLogin">
+                                            <span>Usuario o contraseña incorrecta</span>
+                                        </div>
                                         <p>
                                             <a href="#" class="forgot">{{ forgot }}</a>
                                         </p>
@@ -56,8 +59,7 @@
 </template>
 
 <script>
-
-
+import peticionesHttp from '../services/services'
 export default {
     name: 'login',
     data(){
@@ -67,8 +69,12 @@ export default {
             forgot: 'No puedes acceder a tu cuenta?',
             btnLogin: 'Ingresar',
             user: '',
-            password: ''
+            password: '',
+            errorLogin: false
         }
+    },
+    created: function(){
+        this.errorLogin = false
     },
     mounted: function() {
 
@@ -102,11 +108,9 @@ export default {
         validateBeforeSubmit: function() {
             this.$validator.validateAll().then((result) => {
                 if (result) {                    
-                    alert('From Submitted!');
-                    return;
+                    this.errorLogin = peticionesHttp.login(this.user, this.password)
+                    return
                 }
-
-                alert('Correct them errors!');
             })
         }
     }

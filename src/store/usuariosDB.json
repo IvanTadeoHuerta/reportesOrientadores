@@ -1,0 +1,374 @@
+{
+    "usuarios": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "mr",
+                "first": "kenan",
+                "last": "çamdalı"
+            },
+            "location": {
+                "street": "2066 istiklal cd",
+                "city": "aydın",
+                "state": "burdur",
+                "postcode": 28491
+            },
+            "email": "kenan.çamdalı@example.com",
+            "login": {
+                "username": "ivantec5sem",
+                "password": "123",
+                "salt": "GQIVoKnl",
+                "md5": "68852f988b4981d6dca37415a2504fef",
+                "sha1": "abd448142266d6caaf853a1cb671a23a191eace1",
+                "sha256": "84386267fee59951b4aa5e6a78f65a3fff94c6e178a00302cb2ef659ce17f500"
+            },
+            "dob": "1995-05-15 23:52:33",
+            "registered": "2004-03-19 18:13:41",
+            "phone": "(745)-248-4934",
+            "cell": "(134)-676-0699",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/13.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/13.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/13.jpg"
+            },
+            "nat": "TR"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "mr",
+                "first": "zachary",
+                "last": "white"
+            },
+            "location": {
+                "street": "9292 duke st",
+                "city": "delisle",
+                "state": "nova scotia",
+                "postcode": 96190
+            },
+            "email": "zachary.white@example.com",
+            "login": {
+                "username": "greenmeercat242",
+                "password": "akira",
+                "salt": "VmmNX836",
+                "md5": "8f5286a1b5ab94735e342a82e97c6be3",
+                "sha1": "a64a6cc160b8ad0d2d4fe8a9bd7dffb0c4e24152",
+                "sha256": "2ba3134e0b3eaf3a9036babd686c1e4a72e4da142851a6e5ace239129c43dbee"
+            },
+            "dob": "1990-10-04 06:34:13",
+            "registered": "2004-07-02 19:08:48",
+            "phone": "056-861-5450",
+            "cell": "494-182-0851",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/48.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/48.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/48.jpg"
+            },
+            "nat": "CA"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "mr",
+                "first": "joel",
+                "last": "maki"
+            },
+            "location": {
+                "street": "2746 pispalan valtatie",
+                "city": "suomussalmi",
+                "state": "ostrobothnia",
+                "postcode": 87171
+            },
+            "email": "joel.maki@example.com",
+            "login": {
+                "username": "blackmeercat103",
+                "password": "dennis",
+                "salt": "iePSTZkZ",
+                "md5": "589f969305d400730f2f6b860c348121",
+                "sha1": "c7ebbf06fb1b32704389491aa926c872a17be4d2",
+                "sha256": "a3c2183e620c199bb0c4f5e83982bad3d723b8579a80c831d2f7c31615cc3793"
+            },
+            "dob": "1989-11-24 16:13:51",
+            "registered": "2007-01-19 06:04:41",
+            "phone": "05-020-127",
+            "cell": "043-704-92-93",
+            "id": {
+                "name": "HETU",
+                "value": "1589-0932"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/91.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/91.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/91.jpg"
+            },
+            "nat": "FI"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "mr",
+                "first": "élton",
+                "last": "fogaça"
+            },
+            "location": {
+                "street": "2027 rua são sebastiao ",
+                "city": "açailândia",
+                "state": "rio de janeiro",
+                "postcode": 79879
+            },
+            "email": "élton.fogaça@example.com",
+            "login": {
+                "username": "blackbutterfly796",
+                "password": "creation",
+                "salt": "sydagjbE",
+                "md5": "65c118194b146934c37cb9f550f3bb25",
+                "sha1": "68ffed89e2b6600d7247ff8d4fce9055270930b1",
+                "sha256": "4782cef790af7ca3d709b0752d41c6b277cfa28442905485e25b8c5f3c2b94b3"
+            },
+            "dob": "1963-02-09 03:37:11",
+            "registered": "2007-04-09 08:09:30",
+            "phone": "(42) 2020-9325",
+            "cell": "(83) 1537-5719",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/5.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/5.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/5.jpg"
+            },
+            "nat": "BR"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "mr",
+                "first": "carl",
+                "last": "carlson"
+            },
+            "location": {
+                "street": "2746 dame street",
+                "city": "nenagh",
+                "state": "donegal",
+                "postcode": 25146
+            },
+            "email": "carl.carlson@example.com",
+            "login": {
+                "username": "blackbird970",
+                "password": "nice",
+                "salt": "pGuvg00Q",
+                "md5": "7030558694ba4ff2851a0b67878d0d64",
+                "sha1": "a1818bb1a4be51c4c4181eef6db586d2a75a024a",
+                "sha256": "8a96473ca483fcb71040e68f7dc0aa7cfd7b720e5d190ac57aa04e12ae04329e"
+            },
+            "dob": "1963-01-17 08:55:16",
+            "registered": "2009-07-14 05:43:25",
+            "phone": "011-072-8938",
+            "cell": "081-216-3579",
+            "id": {
+                "name": "PPS",
+                "value": "1299351T"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/56.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/56.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/56.jpg"
+            },
+            "nat": "IE"
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "mrs",
+                "first": "brooke",
+                "last": "diaz"
+            },
+            "location": {
+                "street": "4932 north road",
+                "city": "glasgow",
+                "state": "county fermanagh",
+                "postcode": "W1G 3QE"
+            },
+            "email": "brooke.diaz@example.com",
+            "login": {
+                "username": "goldengorilla208",
+                "password": "charlie123",
+                "salt": "dKDSwZVX",
+                "md5": "9cb44e8b4c53527ec41186210f9f9bf1",
+                "sha1": "31e4e987389aa480de3b0e297176bcab9dabaeff",
+                "sha256": "188811a7ab16dd1220be32dce97de28652e112201958213326bf60c58485eca6"
+            },
+            "dob": "1959-08-14 23:18:19",
+            "registered": "2003-04-10 18:18:20",
+            "phone": "0161 260 5332",
+            "cell": "0704-627-632",
+            "id": {
+                "name": "NINO",
+                "value": "RB 28 08 66 H"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/8.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/8.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/8.jpg"
+            },
+            "nat": "GB"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "mr",
+                "first": "toivo",
+                "last": "honkala"
+            },
+            "location": {
+                "street": "2647 reijolankatu",
+                "city": "pihtipudas",
+                "state": "south karelia",
+                "postcode": 99102
+            },
+            "email": "toivo.honkala@example.com",
+            "login": {
+                "username": "bigrabbit293",
+                "password": "wallace",
+                "salt": "sqPQOPtO",
+                "md5": "eff6fbd53f2a18dded16249a1efa31be",
+                "sha1": "c7f1cff8871386f7959d23892c5ea40bcee6aaa2",
+                "sha256": "4da39ca199970221594b78919d2e0e59a1ee42b660e3aa624b0c1f23a38c4595"
+            },
+            "dob": "1979-10-17 02:19:42",
+            "registered": "2016-02-14 08:08:04",
+            "phone": "03-240-080",
+            "cell": "047-420-50-56",
+            "id": {
+                "name": "HETU",
+                "value": "1279-9058"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/65.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
+            },
+            "nat": "FI"
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "ms",
+                "first": "سارا",
+                "last": "کوتی"
+            },
+            "location": {
+                "street": "1703 موسیوند",
+                "city": "ایلام",
+                "state": "ایلام",
+                "postcode": 23619
+            },
+            "email": "سارا.کوتی@example.com",
+            "login": {
+                "username": "bluepanda514",
+                "password": "poodle",
+                "salt": "w3vEHpe0",
+                "md5": "0d2a5e88cef278df1f377efaa4a95c8b",
+                "sha1": "8aa7cbed13c54e2802e0d1af21af0d4f9d95dcd3",
+                "sha256": "f1b70df851b6e0f58772adc6f9eeb3ed3f5c583af3e31acabe0bda0cc962e479"
+            },
+            "dob": "1981-12-22 16:42:32",
+            "registered": "2005-03-05 06:46:53",
+            "phone": "003-59105709",
+            "cell": "0952-547-1939",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/61.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/61.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/61.jpg"
+            },
+            "nat": "IR"
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "ms",
+                "first": "alyssia",
+                "last": "faure"
+            },
+            "location": {
+                "street": "8907 rue de l'abbé-de-l'épée",
+                "city": "dunkerque",
+                "state": "val-de-marne",
+                "postcode": 64440
+            },
+            "email": "alyssia.faure@example.com",
+            "login": {
+                "username": "bigbutterfly154",
+                "password": "sixsix",
+                "salt": "Jk1ULbey",
+                "md5": "ca3f4a9197254fc3bb80d6272fa9a2d3",
+                "sha1": "a8aa86913428f9882753ee54627eeca1c3c3561e",
+                "sha256": "10051cd98263952affdce34f789c5f1e1f599f652c6468f3b1ccbd59787f168f"
+            },
+            "dob": "1964-06-30 18:42:45",
+            "registered": "2010-01-30 02:31:47",
+            "phone": "05-99-18-13-35",
+            "cell": "06-35-21-44-53",
+            "id": {
+                "name": "INSEE",
+                "value": "264528816339 21"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/39.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/39.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/39.jpg"
+            },
+            "nat": "FR"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "mr",
+                "first": "bryan",
+                "last": "bradley"
+            },
+            "location": {
+                "street": "3737 edwards rd",
+                "city": "lakeland",
+                "state": "delaware",
+                "postcode": 77985
+            },
+            "email": "bryan.bradley@example.com",
+            "login": {
+                "username": "heavygoose927",
+                "password": "zanzibar",
+                "salt": "AWlrkfJm",
+                "md5": "f22af82a47cd2e6043287512a8088cf8",
+                "sha1": "f76e32999dad9dee1179b1458b69c654ec31238e",
+                "sha256": "fa59fcaf6d11f34e4f0c25d77e4f2d0477f7dd5ba601d4a62f325329176148ff"
+            },
+            "dob": "1974-03-29 11:37:13",
+            "registered": "2002-06-04 20:15:18",
+            "phone": "(820)-549-0649",
+            "cell": "(567)-478-1080",
+            "id": {
+                "name": "SSN",
+                "value": "710-77-5693"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/44.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/44.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/44.jpg"
+            },
+            "nat": "US"
+        }
+    ]
+}
