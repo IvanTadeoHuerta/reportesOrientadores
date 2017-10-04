@@ -4,30 +4,39 @@
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
-                    <a href="#">Evaluación
+                    <a href="#">Mis grupos
                         <span class="fa arrow"></span>
                     </a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="evaluacion_desempeño.html">Evaluación de Desempeño</a>
+                            <a href="#">Grupo 1° A</a>
                         </li>
                         <li>
-                            <a href="historial_evaluaciones.html">Historial de Evaluaciones</a>
+                            <a href="#">Grupo 3° A</a>
                         </li>
                         <li>
-                            <a href="notificacion_evaluacion.html">Notificación de Evaluación</a>
-                        </li>
-                        <li>
-                            <a href="evaluacion_empleado.html">Evaluación Jefe Inmediato</a>
-                        </li>
-                        <li>
-                            <a href="evaluacion_recursosHumanos.html">Evaluación Recursos Humanos</a>
+                            <a href="#">Grupo 5° B</a>
                         </li>
                     </ul>
                 </li>
-
                 <li>
-                    <a href="solicitud_vacaciones.html">Vacaciones</a>
+                    <a href="#">Mis hijos
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">Juan Pérez García</a>
+                        </li>
+                        <li>
+                            <a href="#">Alejandro Magno</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Orientadores</a>
+                </li>
+                <li>
+                    <a href="#">Grupos</a>
                 </li>
 
             </ul>

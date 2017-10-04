@@ -61,16 +61,12 @@
             <ul class="dropdown-menu dropdown-user">
                 <li>
                     <a href="#">
-                        <i class="fa fa-user fa-fw"></i> User Profile</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <i class="fa fa-user fa-fw"></i>{{ nameUser }}</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                    <a href="login.html">
-                        <i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    <a href="#">
+                        <i class="fa fa-sign-out fa-fw"></i> {{ logout }}</a>
                 </li>
             </ul>
             <!-- /.dropdown-user -->
@@ -80,7 +76,17 @@
 </template>
 <script>
 export default {
-    name: 'menuSuperior'
+    name: 'menuSuperior',
+    data(){
+        return{
+            logout: 'Cerrar sesión'
+        }
+    },
+    computed: {
+        nameUser(){
+            return this.$store.state.datosSession.username
+        }
+    }
 }
 </script>
 <style>

@@ -2,7 +2,6 @@
     <!-- /header -->
     <div class="navbar-header">
         <a class="navbar-brand" href="#">
-           
             <b>{{ nombreSistema }}</b>
         </a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
