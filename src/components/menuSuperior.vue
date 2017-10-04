@@ -39,7 +39,7 @@
                                 <em>Yesterday</em>
                             </span>
                         </div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                        <div class="dd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                     </a>
                 </li>
                 <li class="divider"></li>
@@ -89,8 +89,8 @@ export default {
     }
 }
 </script>
-<style>
 
-</style>
+
+
 
 

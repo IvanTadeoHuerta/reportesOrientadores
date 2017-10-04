@@ -137,7 +137,8 @@ body {
 }
 
 .error{
-    color: red;
+    font-weight: bold;
+    color: #FB2D01;
 }
 
 .in-page {
@@ -193,7 +194,7 @@ a:hover, a:focus {
 
 .login-screen:before {
     content: "";
-    background: rgba(0,0,0, 0.5);
+    background: rgba(0,0,0, 0.3);
     position: absolute;
     width: 100%;
     height: 100%;
