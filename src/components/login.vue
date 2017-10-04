@@ -39,7 +39,7 @@
 
                                     <div class="form-group sign-btn">
                                         <input type="submit" class="btn" :value="btnLogin">
-                                        <div :class="{error:true}" v-show="!errorLogin">
+                                        <div :class="{error:true}" v-show="errorLogin">
                                             <span>Usuario o contraseña incorrecta</span>
                                         </div>
                                         <p>
@@ -108,7 +108,7 @@ export default {
         validateBeforeSubmit: function() {
             this.$validator.validateAll().then((result) => {
                 if (result) {                    
-                    this.errorLogin = peticionesHttp.login(this.user, this.password)
+                    this.errorLogin = !peticionesHttp.login(this.user, this.password)
                     return
                 }
             })
@@ -133,6 +133,7 @@ html, body {
 body {
     font-family: 'Raleway',sans-serif;
     position: relative;
+   
 }
 
 .error{
@@ -176,7 +177,7 @@ a:hover, a:focus {
 }
 
 .login-screen {
-    background-image: url('../assets/login.jpg');
+    background-image: url('../assets/img/login.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
