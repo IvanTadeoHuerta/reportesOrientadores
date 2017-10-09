@@ -33,12 +33,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Orientadores</a>
+                    <router-link to="orientadores"  active-class="active">Orientadores</router-link>
                 </li>
                 <li>
-                    <a href="#">Grupos</a>
+                    <router-link to="grupos"  active-class="active">Grupos</router-link>
                 </li>
-
             </ul>
         </div>
     </div>

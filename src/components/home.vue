@@ -9,7 +9,7 @@
     <div id="page-wrapper">
       <div class="row">
         <div class="col-lg-12">
-          <h5 class="page-header">Aqui va algo</h5>
+            <router-view></router-view>
         </div>
       </div>
     </div>
