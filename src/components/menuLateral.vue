@@ -25,10 +25,10 @@
                     </a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Juan Pérez García</a>
+                           <router-link to="historial"  active-class="active">Juan Pérez García</router-link>
                         </li>
                         <li>
-                            <a href="#">Alejandro Magno</a>
+                           <router-link to="historial"  active-class="active">Alejandro Magno</router-link>
                         </li>
                     </ul>
                 </li>
