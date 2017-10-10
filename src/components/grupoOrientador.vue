@@ -1,9 +1,9 @@
 <template>
-  <h1>Aqui va un grupo</h1>
+  <h1>Viendo información del grupo {{ $route.params.id }}</h1>
 </template>
 <script>
 export default {
-    name: 'grupoOrientador'
+    name: 'grupo'
 }
 </script>
 

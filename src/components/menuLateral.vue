@@ -9,13 +9,13 @@
                     </a>
                     <ul class="nav nav-second-level">
                         <li>
-                             <router-link to="grupo"  active-class="active">Grupo 1° A</router-link>
+                             <router-link to="/home/grupo/1"  active-class="active">Grupo 1° A</router-link>
                         </li>
                         <li>
-                             <router-link to="grupo"  active-class="active">Grupo 3° A</router-link>
+                             <router-link to="/home/grupo/2"  active-class="active">Grupo 3° A</router-link>
                         </li>
                         <li>
-                             <router-link to="grupo"  active-class="active">Grupo 5° B</router-link>
+                             <router-link to="/home/grupo/3"  active-class="active">Grupo 5° B</router-link>
                         </li>
                     </ul>
                 </li>
@@ -25,18 +25,18 @@
                     </a>
                     <ul class="nav nav-second-level">
                         <li>
-                           <router-link to="historial"  active-class="active">Juan Pérez García</router-link>
+                           <router-link to="/home/historial"  active-class="active">Juan Pérez García</router-link>
                         </li>
                         <li>
-                           <router-link to="historial"  active-class="active">Alejandro Magno</router-link>
+                           <router-link to="/home/historial"  active-class="active">Alejandro Magno</router-link>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <router-link to="orientadores"  active-class="active">Orientadores</router-link>
+                    <router-link to="/home/orientadores"  active-class="active">Orientadores</router-link>
                 </li>
                 <li>
-                    <router-link to="grupos"  active-class="active">Grupos</router-link>
+                    <router-link to="/home/grupos"  active-class="active">Grupos</router-link>
                 </li>
             </ul>
         </div>
