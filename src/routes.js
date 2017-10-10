@@ -7,6 +7,7 @@ import Home from './components/home.vue'
 import Orientadores from './components/orientadores.vue'
 import Grupos from './components/grupos.vue'
 import Historial from './components/historial.vue'
+import GrupoOrientador from './components/grupoOrientador.vue'
 
 const routes = [
     { path: '/', component: Login, name: 'login' },
@@ -27,6 +28,11 @@ const routes = [
                 path: 'historial', 
                 name: 'historial',
                 component: Historial
+            },
+            {
+                path: 'grupo', 
+                name: 'grupo',
+                component: GrupoOrientador
             }
 
         ]

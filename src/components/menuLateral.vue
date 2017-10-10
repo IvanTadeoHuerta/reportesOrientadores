@@ -9,13 +9,13 @@
                     </a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Grupo 1° A</a>
+                             <router-link to="grupo"  active-class="active">Grupo 1° A</router-link>
                         </li>
                         <li>
-                            <a href="#">Grupo 3° A</a>
+                             <router-link to="grupo"  active-class="active">Grupo 3° A</router-link>
                         </li>
                         <li>
-                            <a href="#">Grupo 5° B</a>
+                             <router-link to="grupo"  active-class="active">Grupo 5° B</router-link>
                         </li>
                     </ul>
                 </li>
