@@ -1,17 +1,14 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <button class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" type="button" @click="abrirModal(-1)">
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <button class="btn btn-primary col-xs-12 col-sm-12 col-md-12 col-lg-12" type="button" @click="abrirModal(-1)">
           <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo Grupo
         </button>
       </div>
-    </div>
-    <div class="row">
-      <br>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+       <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
         <!--Formulario de búsqueda -->
-        <div class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <input type="text" class="form-control" placeholder="Buscar grupo">
           <span class="input-group-btn">
             <button class="btn btn-default" type="button">
