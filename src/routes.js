@@ -6,7 +6,7 @@ import Login from './components/login.vue'
 import Home from './components/home.vue'
 import Orientadores from './components/orientadores.vue'
 import Grupos from './components/grupos.vue'
-import Historial from './components/historial.vue'
+import Estudiante from './components/estudiante.vue'
 import Grupo from './components/grupoOrientador.vue'
 
 const routes = [
@@ -25,9 +25,9 @@ const routes = [
                 component: Grupos
             },
             {
-                path: 'historial/:id', 
-                name: 'historial',
-                component: Historial
+                path: 'estudiante/:id', 
+                name: 'estudiante',
+                component: Estudiante
             },
             {
                 path: 'grupo/:id', 
