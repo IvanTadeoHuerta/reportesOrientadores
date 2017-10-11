@@ -38,6 +38,9 @@
                 <li>
                     <router-link to="/home/grupos"  active-class="active">Grupos</router-link>
                 </li>
+                <li>
+                    <router-link to="/home/ciclos"  active-class="active">Ciclos</router-link>
+                </li>
             </ul>
         </div>
     </div>
