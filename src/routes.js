@@ -25,7 +25,7 @@ const routes = [
                 component: Grupos
             },
             {
-                path: 'historial', 
+                path: 'historial/:id', 
                 name: 'historial',
                 component: Historial
             },
