@@ -18,7 +18,14 @@ const routes = [
             {
                 path: 'ciclos',
                 name: 'ciclos',
-                component: Ciclos
+                component: Ciclos,
+                children: [
+                    {
+                        path: 'grupos/:id',
+                        name: 'grupos',
+                        component: Grupos
+                    }
+                ]
             },
             {
                 path: 'orientadores',
@@ -26,17 +33,12 @@ const routes = [
                 component: Orientadores
             },
             {
-                path: 'grupos',
-                name: 'grupos',
-                component: Grupos
-            },
-            {
-                path: 'estudiante/:id', 
+                path: 'estudiante/:id',
                 name: 'estudiante',
                 component: Estudiante
             },
             {
-                path: 'grupo/:id', 
+                path: 'grupo/:id',
                 name: 'grupo',
                 component: Grupo
             }
