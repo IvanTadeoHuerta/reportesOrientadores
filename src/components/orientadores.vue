@@ -1,26 +1,23 @@
 <template>
   <div>
-     <div class="row">
-       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <button class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" type="button">
-             <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo orientador
-          </button>           
-       </div>
-     </div> 
     <div class="row">
-      <br>
-       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <!--Formulario de búsqueda -->
-                <div class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <input type="text" class="form-control" placeholder="Buscar orientador">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                      <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                  </span>
-                </div>
-              <!--Fin formulario de búsqueda -->
-       </div>
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <button class="btn btn-primary col-xs-12 col-sm-12 col-md-12 col-lg-12" type="button">
+          <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo orientador
+        </button>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+        <!--Formulario de búsqueda -->
+        <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <input type="text" class="form-control" placeholder="Buscar orientador">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+        <!--Fin formulario de búsqueda -->
+      </div>
     </div>
     <br>
     <div class="row">
@@ -115,7 +112,7 @@
 </template>
 <script>
 export default {
-  name:'orientadores'
+  name: 'orientadores'
 }
 </script>
 
