@@ -42,7 +42,7 @@
                 <td>Grupo 1° A</td>
                 <td>Manuel Alba Matinez</td>
                 <td>
-                  <button class="btn btn-primary"  @click="abrirModal(1)">
+                  <button class="btn btn-primary" @click="abrirModal(1)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -57,7 +57,7 @@
                 <td>Grupo 2° B</td>
                 <td>Luis Miguel Tadeo Huerta</td>
                 <td>
-                  <button class="btn btn-primary"  @click="abrirModal(2)">
+                  <button class="btn btn-primary" @click="abrirModal(2)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -72,7 +72,7 @@
                 <td>Grupo 3° C</td>
                 <td>Francisco Carrillo</td>
                 <td>
-                  <button class="btn btn-primary"  @click="abrirModal(3)">
+                  <button class="btn btn-primary" @click="abrirModal(3)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -87,7 +87,7 @@
                 <td>Grupo 4° C</td>
                 <td>Laura Montes de Oca</td>
                 <td>
-                  <button class="btn btn-primary"  @click="abrirModal(4)">
+                  <button class="btn btn-primary" @click="abrirModal(4)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -102,7 +102,7 @@
                 <td>Grupo 5° D</td>
                 <td>Fernando Quintana</td>
                 <td>
-                  <button class="btn btn-primary"  @click="abrirModal(5)">
+                  <button class="btn btn-primary" @click="abrirModal(5)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -131,10 +131,70 @@
             </h4>
           </div>
           <div class="modal-body table-responsive" style="overflow-x:auto; max-height: 400px; overflow-y:auto;">
-            <p>Aqui va el formulario de registro</p>
+            <!-- Inicio del formulario -->
+            <form role="form">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="turno">Turno:</label>
+                    <select class="form-control" name="turno">
+                      <option>-- Seleccione --</option>
+                      <option>Matutino</option>
+                      <option>Vespertino</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="turno">Ciclo escolar:</label>
+                    <select class="form-control" name="turno">
+                      <option>-- Seleccione --</option>
+                      <option>2010 - 2011</option>
+                      <option>2011 - 2012</option>
+                      <option>2012 - 2013</option>
+                      <option>2013 - 2014</option>
+                      <option>2014 - 2015</option>
+                      <option>2015 - 2016</option>
+                      <option>2016 - 2017</option>
+                      <option>2017 - 2018</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="grado">Grado</label>
+                    <input type="number" class="form-control" name="grado" value="">
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="grupo">Grupo</label>
+                    <input type="text" class="form-control" name="grupo" value="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="orientador">Orientador:</label>
+                    <select class="form-control" name="orientador">
+                      <option>-- Seleccione --</option>
+                      <option>Nombre orientador 1</option>
+                      <option>Nombre orientador 2</option>
+                      <option>Nombre orientador 3</option>
+                      <option>Nombre orientador 4</option>
+                      <option>Nombre orientador 5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- Fin del formulario -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">{{ textoBtn }}</button>
           </div>
         </div>
       </div>
@@ -148,15 +208,18 @@ export default {
   name: 'grupos',
   data() {
     return {
-      titulo: ''
+      titulo: '',
+      textoBtn: ''
     }
   },
   methods: {
     abrirModal(id) {
       if (id == -1) {
         this.titulo = 'Agregar grupo'
+        this.textoBtn = 'Agregar'
       } else {
         this.titulo = 'Actualizar información del grupo ' + id
+        this.textoBtn = 'Actualizar'
       }
       $('#modalOrientadores').modal('show')
     }
