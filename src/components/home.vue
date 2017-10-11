@@ -9,6 +9,7 @@
     <div id="page-wrapper">
       <div class="row">
         <div class="col-lg-12">
+            <h5 class="page-header"><b>Titulo</b></h5>
             <router-view></router-view>
         </div>
       </div>
@@ -31,4 +32,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.page-header{
+  margin-top: 1em;
+}
+</style>
 

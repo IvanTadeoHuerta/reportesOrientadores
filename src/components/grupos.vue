@@ -1,6 +1,5 @@
 <template>
    <div>
-    <h5 class="page-header"><b>Grupos</b></h5>
      <div class="row">
        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <button class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" type="button">
@@ -126,8 +125,3 @@ export default {
    name: 'grupos'
 }
 </script>
-<style scoped>
-.page-header{
-  margin-top: 1em;
-}
-</style>
