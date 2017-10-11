@@ -1,5 +1,21 @@
 <template>
-   <div class="row">
+  <div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <!--Formulario de búsqueda -->
+                <div class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <input type="text" class="form-control" placeholder="Buscar alumno">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  </span>
+                </div>
+              <!--Fin formulario de búsqueda -->
+       </div>
+    </div>
+    <br>
+    <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="table-responsive">
           <table class="table table-striped table-bordered">
@@ -36,7 +52,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                     Dar de baja
+                    Dar de baja
                   </button>
                 </td>
               </tr>
@@ -44,7 +60,7 @@
                 <td>2</td>
                 <td>Alumnno registrado 2</td>
                 <td>Tutor registrado 2</td>
-                 <td>
+                <td>
                   <button class="btn btn-success">
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
@@ -61,7 +77,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                      Dar de baja
+                    Dar de baja
                   </button>
                 </td>
               </tr>
@@ -69,7 +85,7 @@
                 <td>3</td>
                 <td>Alumnno registrado 3</td>
                 <td>Tutor registrado 3</td>
-                 <td>
+                <td>
                   <button class="btn btn-success">
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
@@ -86,7 +102,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                     Dar de baja
+                    Dar de baja
                   </button>
                 </td>
               </tr>
@@ -94,7 +110,7 @@
                 <td>4</td>
                 <td>Alumnno registrado 4</td>
                 <td>Tutor registrado 4</td>
-                 <td>
+                <td>
                   <button class="btn btn-success">
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
@@ -111,7 +127,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                      Dar de baja
+                    Dar de baja
                   </button>
                 </td>
               </tr>
@@ -119,7 +135,7 @@
                 <td>5</td>
                 <td>Alumnno registrado 5</td>
                 <td>Tutor registrado 5</td>
-                 <td>
+                <td>
                   <button class="btn btn-success">
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
@@ -136,7 +152,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                     Dar de baja
+                    Dar de baja
                   </button>
                 </td>
               </tr>
@@ -145,6 +161,7 @@
         </div>
       </div>
     </div>
+  </div>
 </template>
 <script>
 export default {
