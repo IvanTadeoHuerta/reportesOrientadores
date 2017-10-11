@@ -1,26 +1,26 @@
 <template>
-   <div>
-     <div class="row">
-       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <button class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" type="button">
-             <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo Grupo
-          </button>           
-       </div>
-     </div> 
+  <div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <button class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" type="button" @click="agregarGrupo">
+          <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo Grupo
+        </button>
+      </div>
+    </div>
     <div class="row">
       <br>
-       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <!--Formulario de búsqueda -->
-                <div class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <input type="text" class="form-control" placeholder="Buscar grupo">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                      <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                  </span>
-                </div>
-              <!--Fin formulario de búsqueda -->
-       </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <!--Formulario de búsqueda -->
+        <div class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <input type="text" class="form-control" placeholder="Buscar grupo">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+        <!--Fin formulario de búsqueda -->
+      </div>
     </div>
     <br>
     <div class="row">
@@ -117,11 +117,39 @@
         </div>
       </div>
     </div>
+
+    <!--Inicio modal de formulario para orientadores -->
+    <div id="modalOrientadores" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">
+              <b>Titulo</b>
+            </h4>
+          </div>
+          <div class="modal-body table-responsive" style="overflow-x:auto; max-height: 400px; overflow-y:auto;">
+            <p>Aqui va el formulario de registro</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin  modal de formulario para orientadores  -->
   </div>
 </template>
 
 <script>
 export default {
-   name: 'grupos'
+   name: 'grupos',
+   methods:{
+     agregarGrupo(){
+        $('#modalOrientadores').modal('show')
+     }
+   }
 }
 </script>
