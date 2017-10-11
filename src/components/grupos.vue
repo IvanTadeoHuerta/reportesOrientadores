@@ -127,7 +127,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
             <h4 class="modal-title">
-              <b>Titulo</b>
+              <b>{{titulo}}</b>
             </h4>
           </div>
           <div class="modal-body table-responsive" style="overflow-x:auto; max-height: 400px; overflow-y:auto;">
@@ -145,11 +145,21 @@
 
 <script>
 export default {
-   name: 'grupos',
-   methods:{
-     abrirModal(id){
-        $('#modalOrientadores').modal('show')
-     }
-   }
+  name: 'grupos',
+  data() {
+    return {
+      titulo: ''
+    }
+  },
+  methods: {
+    abrirModal(id) {
+      if (id == -1) {
+        this.titulo = 'Agregar grupo'
+      } else {
+        this.titulo = 'Actualizar información del grupo ' + id
+      }
+      $('#modalOrientadores').modal('show')
+    }
+  }
 }
 </script>
