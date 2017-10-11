@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <button class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" type="button" @click="agregarGrupo">
+        <button class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" type="button" @click="abrirModal(-1)">
           <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo Grupo
         </button>
       </div>
@@ -42,7 +42,7 @@
                 <td>Grupo 1° A</td>
                 <td>Manuel Alba Matinez</td>
                 <td>
-                  <button class="btn btn-primary">
+                  <button class="btn btn-primary"  @click="abrirModal(1)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -57,7 +57,7 @@
                 <td>Grupo 2° B</td>
                 <td>Luis Miguel Tadeo Huerta</td>
                 <td>
-                  <button class="btn btn-primary">
+                  <button class="btn btn-primary"  @click="abrirModal(2)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -72,7 +72,7 @@
                 <td>Grupo 3° C</td>
                 <td>Francisco Carrillo</td>
                 <td>
-                  <button class="btn btn-primary">
+                  <button class="btn btn-primary"  @click="abrirModal(3)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -87,7 +87,7 @@
                 <td>Grupo 4° C</td>
                 <td>Laura Montes de Oca</td>
                 <td>
-                  <button class="btn btn-primary">
+                  <button class="btn btn-primary"  @click="abrirModal(4)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -102,7 +102,7 @@
                 <td>Grupo 5° D</td>
                 <td>Fernando Quintana</td>
                 <td>
-                  <button class="btn btn-primary">
+                  <button class="btn btn-primary"  @click="abrirModal(5)">
                     <span class="glyphicon glyphicon-list-alt"></span>
                   </button>
                 </td>
@@ -147,7 +147,7 @@
 export default {
    name: 'grupos',
    methods:{
-     agregarGrupo(){
+     abrirModal(id){
         $('#modalOrientadores').modal('show')
      }
    }
