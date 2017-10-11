@@ -32,6 +32,7 @@
               <tr>
                 <th>#</th>
                 <th>Grupo</th>
+                <th>Orientador a cargo</th>
                 <th>Actualizar</th>
                 <th>Eliminar</th>
               </tr>
@@ -40,6 +41,7 @@
               <tr>
                 <td>1</td>
                 <td>Grupo 1° A</td>
+                <td>Manuel Alba Matinez</td>
                 <td>
                   <button class="btn btn-primary">
                     <span class="glyphicon glyphicon-list-alt"></span>
@@ -54,6 +56,7 @@
               <tr>
                 <td>2</td>
                 <td>Grupo 2° B</td>
+                <td>Luis Miguel Tadeo Huerta</td>
                 <td>
                   <button class="btn btn-primary">
                     <span class="glyphicon glyphicon-list-alt"></span>
@@ -68,6 +71,7 @@
               <tr>
                 <td>3</td>
                 <td>Grupo 3° C</td>
+                <td>Francisco Carrillo</td>
                 <td>
                   <button class="btn btn-primary">
                     <span class="glyphicon glyphicon-list-alt"></span>
@@ -82,6 +86,7 @@
               <tr>
                 <td>4</td>
                 <td>Grupo 4° C</td>
+                <td>Laura Montes de Oca</td>
                 <td>
                   <button class="btn btn-primary">
                     <span class="glyphicon glyphicon-list-alt"></span>
@@ -96,6 +101,7 @@
               <tr>
                 <td>5</td>
                 <td>Grupo 5° D</td>
+                <td>Fernando Quintana</td>
                 <td>
                   <button class="btn btn-primary">
                     <span class="glyphicon glyphicon-list-alt"></span>
