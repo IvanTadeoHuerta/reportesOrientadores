@@ -36,7 +36,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                    <span class="glyphicon glyphicon-trash"></span>
+                     Dar de baja
                   </button>
                 </td>
               </tr>
@@ -61,7 +61,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                    <span class="glyphicon glyphicon-trash"></span>
+                      Dar de baja
                   </button>
                 </td>
               </tr>
@@ -86,7 +86,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                    <span class="glyphicon glyphicon-trash"></span>
+                     Dar de baja
                   </button>
                 </td>
               </tr>
@@ -111,7 +111,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                    <span class="glyphicon glyphicon-trash"></span>
+                      Dar de baja
                   </button>
                 </td>
               </tr>
@@ -136,7 +136,7 @@
                 </td>
                 <td>
                   <button class="btn btn-danger">
-                    <span class="glyphicon glyphicon-trash"></span>
+                     Dar de baja
                   </button>
                 </td>
               </tr>
