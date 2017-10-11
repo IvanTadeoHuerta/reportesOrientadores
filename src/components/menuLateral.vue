@@ -36,10 +36,7 @@
                     <router-link to="/home/orientadores"  active-class="active">Orientadores</router-link>
                 </li>
                 <li>
-                    <router-link to="/home/grupos"  active-class="active">Grupos</router-link>
-                </li>
-                <li>
-                    <router-link to="/home/ciclos"  active-class="active">Ciclos</router-link>
+                    <router-link to="/home/ciclos"  active-class="active">Ciclos Escolares</router-link>
                 </li>
             </ul>
         </div>

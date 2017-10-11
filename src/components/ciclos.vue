@@ -16,7 +16,8 @@
                             <tr>
                                 <th>#</th>
                                 <th>Ciclo Escolar</th>
-                                <th>Actualizar</th>
+                                <th>Admin de grupos</th>
+                                <th>Actualizar periodo</th>
                                 <th>Eliminar</th>
                             </tr>
                         </thead>
@@ -25,8 +26,11 @@
                                 <td>1</td>
                                 <td>2015 - 2016</td>
                                 <td>
+                                    <router-link to="/home/ciclos/grupos">Ir a grupos</router-link>
+                                </td>
+                                <td>
                                     <button class="btn btn-primary" @click="abrirModal(1)">
-                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                        <span class="glyphicon  glyphicon-calendar"></span>
                                     </button>
                                 </td>
                                 <td>
@@ -39,8 +43,11 @@
                                 <td>2</td>
                                 <td>2016 - 2017</td>
                                 <td>
+                                    <router-link to="/home/ciclos/grupos">Ir a grupos</router-link>
+                                </td>
+                                <td>
                                     <button class="btn btn-primary" @click="abrirModal(2)">
-                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                        <span class="glyphicon  glyphicon-calendar"></span>
                                     </button>
                                 </td>
                                 <td>
@@ -53,8 +60,11 @@
                                 <td>3</td>
                                 <td>2017 - 2018</td>
                                 <td>
+                                    <router-link to="/home/ciclos/grupos">Ir a grupos</router-link>
+                                </td>
+                                <td>
                                     <button class="btn btn-primary" @click="abrirModal(3)">
-                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                        <span class="glyphicon  glyphicon-calendar"></span>
                                     </button>
                                 </td>
                                 <td>
@@ -67,8 +77,11 @@
                                 <td>4</td>
                                 <td>2018 - 2019</td>
                                 <td>
+                                    <router-link to="/home/ciclos/grupos">Ir a grupos</router-link>
+                                </td>
+                                <td>
                                     <button class="btn btn-primary" @click="abrirModal(4)">
-                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                        <span class="glyphicon  glyphicon-calendar"></span>
                                     </button>
                                 </td>
                                 <td>
@@ -81,8 +94,11 @@
                                 <td>5</td>
                                 <td>2019 - 2020</td>
                                 <td>
+                                    <router-link to="/home/ciclos/grupos">Ir a grupos</router-link>
+                                </td>
+                                <td>
                                     <button class="btn btn-primary" @click="abrirModal(5)">
-                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                        <span class="glyphicon  glyphicon-calendar"></span>
                                     </button>
                                 </td>
                                 <td>
