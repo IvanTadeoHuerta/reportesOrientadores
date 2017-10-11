@@ -31,6 +31,7 @@
               <tr>
                 <th>#</th>
                 <th>Grupo</th>
+                <th>Turno</th>
                 <th>Orientador a cargo</th>
                 <th>Actualizar</th>
                 <th>Eliminar</th>
@@ -40,6 +41,7 @@
               <tr>
                 <td>1</td>
                 <td>Grupo 1° A</td>
+                <td>Matutino</td>
                 <td>Manuel Alba Matinez</td>
                 <td>
                   <button class="btn btn-primary" @click="abrirModal(1)">
@@ -55,6 +57,7 @@
               <tr>
                 <td>2</td>
                 <td>Grupo 2° B</td>
+                <td>Matutino</td>
                 <td>Luis Miguel Tadeo Huerta</td>
                 <td>
                   <button class="btn btn-primary" @click="abrirModal(2)">
@@ -70,6 +73,7 @@
               <tr>
                 <td>3</td>
                 <td>Grupo 3° C</td>
+                <td>Matutino</td>
                 <td>Francisco Carrillo</td>
                 <td>
                   <button class="btn btn-primary" @click="abrirModal(3)">
@@ -85,6 +89,7 @@
               <tr>
                 <td>4</td>
                 <td>Grupo 4° C</td>
+                <td>Matutino</td>
                 <td>Laura Montes de Oca</td>
                 <td>
                   <button class="btn btn-primary" @click="abrirModal(4)">
@@ -100,6 +105,7 @@
               <tr>
                 <td>5</td>
                 <td>Grupo 5° D</td>
+                <td>Matutino</td>
                 <td>Fernando Quintana</td>
                 <td>
                   <button class="btn btn-primary" @click="abrirModal(5)">
