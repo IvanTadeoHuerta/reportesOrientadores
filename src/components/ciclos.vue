@@ -61,7 +61,7 @@
                                     <td>3</td>
                                     <td>2017 - 2018</td>
                                     <td>
-                                        <router-link to="/home/ciclos/grupos/3" v-on:click.native="clickGrupo()">Ir a grupos</router-link>
+                                        <router-link to="/home/ciclos/grupos/3" >Ir a grupos</router-link>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary" @click="abrirModal(3)">
@@ -164,9 +164,11 @@ export default {
 
             $('#modalCiclos').modal('show')
 
-        },
-        clickGrupo() {
-            this.seccionCiclos = false
+        }
+    },
+    watch:{
+        '$route.name'(){
+           this.seccionCiclos = this.$route.name == 'ciclos' ? true : false
         }
     }
 
