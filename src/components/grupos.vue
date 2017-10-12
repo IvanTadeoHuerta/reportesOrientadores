@@ -121,8 +121,8 @@
       </div>
     </div>
 
-    <!--Inicio modal de formulario para orientadores -->
-    <div id="modalOrientadores" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+    <!--Inicio modal de formulario para grupos -->
+    <div id="modalGrupos" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -195,7 +195,7 @@
         </div>
       </div>
     </div>
-    <!-- Fin  modal de formulario para orientadores  -->
+    <!-- Fin  modal de formulario para grupos  -->
   </div>
 </template>
 
@@ -217,7 +217,7 @@ export default {
         this.titulo = 'Actualizar información del grupo ' + id
         this.textoBtn = 'Actualizar'
       }
-      $('#modalOrientadores').modal('show')
+      $('#modalGrupos').modal('show')
     }
   }
 }

@@ -9,7 +9,7 @@
     <div id="page-wrapper">
       <div class="row">
         <div class="col-lg-12">
-            <h5 class="page-header"><b>Titulo</b></h5>
+            <h5 class="page-header"><b>{{tituloContenido}}</b></h5>
             <router-view></router-view>
         </div>
       </div>
@@ -22,8 +22,36 @@ import MenuSuperior from './menuSuperior.vue'
 import MenuLateral from './menuLateral.vue'
 export default {
   name: 'home',
-  mounted: function() {
+  data(){
+    return{
+      tituloContenido: 'Bienvenido'
+    }
+  },
+  watch:{
+    '$route.name'() {
+        let nameRoute = this.$route.name
 
+        switch(nameRoute){
+          case 'home':
+            this.tituloContenido = 'Bienvenido'
+          break;
+          case 'ciclos':
+            this.tituloContenido = 'Ciclos escolares'
+          break;
+          case 'grupo':
+            this.tituloContenido = 'Lista de alumnos del grupo'
+          break;
+          case 'grupos':
+            this.tituloContenido = 'Grupos registrados para el ciclo escolar'
+          break;
+          case 'orientadores':
+            this.tituloContenido = 'Orientadores'
+          break;
+          case 'estudiante':
+            this.tituloContenido = 'Datos del estudiante '
+          break;
+        }
+    }
   },
   components: {
     Cabecera,
