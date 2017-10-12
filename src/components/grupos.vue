@@ -6,7 +6,7 @@
           <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo Grupo
         </button>
       </div>
-       <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
         <!--Formulario de búsqueda -->
         <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <input type="text" class="form-control" placeholder="Buscar grupo">
@@ -139,26 +139,14 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="turno">Turno:</label>
-                    <select class="form-control" name="turno">
-                      <option>-- Seleccione --</option>
-                      <option>Matutino</option>
-                      <option>Vespertino</option>
-                    </select>
+                    <label for="idGrupo">Id Grupo</label>
+                    <input type="text" class="form-control" name="idGrupo" value="1M20175B" disabled>
                   </div>
 
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label for="turno">Ciclo escolar:</label>
-                    <select class="form-control" name="turno">
-                      <option>-- Seleccione --</option>
-                      <option>2010 - 2011</option>
-                      <option>2011 - 2012</option>
-                      <option>2012 - 2013</option>
-                      <option>2013 - 2014</option>
-                      <option>2014 - 2015</option>
-                      <option>2015 - 2016</option>
-                      <option>2016 - 2017</option>
-                      <option>2017 - 2018</option>
+                    <select class="form-control" name="turno" disabled>
+                      <option>2017 -2018</option>
                     </select>
                   </div>
                 </div>
@@ -179,6 +167,14 @@
 
               <div class="form-group">
                 <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="turno">Turno:</label>
+                    <select class="form-control" name="turno">
+                        <option>-- Seleccione --</option>
+                        <option>Matutino</option>
+                        <option>Vespertino</option>
+                    </select>
+                  </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label for="orientador">Orientador:</label>
                     <select class="form-control" name="orientador">
