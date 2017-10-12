@@ -9,6 +9,7 @@ import Orientadores from './components/orientadores.vue'
 import Grupos from './components/grupos.vue'
 import Estudiante from './components/estudiante.vue'
 import Grupo from './components/grupoOrientador.vue'
+import Historial from './components/historial.vue'
 
 const routes = [
     { path: '/', component: Login, name: 'login' },
@@ -37,6 +38,7 @@ const routes = [
                 name: 'estudiante',
                 component: Estudiante
             },
+            { path: 'historial', component: Historial, name: 'historial' },
             {
                 path: 'grupo/:id',
                 name: 'grupo',
