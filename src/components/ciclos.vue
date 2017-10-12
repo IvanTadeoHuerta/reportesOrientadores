@@ -125,17 +125,17 @@
                                 <b>{{titulo}}</b>
                             </h4>
                         </div>
-                        <div class="modal-body table-responsive" style="overflow-x:auto; max-height: 400px; overflow-y:auto;">
+                        <div class="modal-body">
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                         <label for="finicio">Fecha inicio</label>
-                                        <input type="text" class="form-control" name="finicio" value="">
+                                        <input type="text" class="form-control finicio" name="finicio" value="" autocomplete="off">
                                     </div>
 
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                         <label for="ffinal">Fecha final</label>
-                                        <input type="text" class="form-control" name="ffinal" value="">
+                                        <input type="text" class="form-control ffinal" name="ffinal" value="" autocomplete="off">
                                     </div>
                                 </div>
                             </div>
@@ -164,6 +164,14 @@ export default {
             seccionCiclos: true
         }
     },
+    mounted(){
+       $('.ffinal, .finicio').datetimepicker({
+                 format: 'DD/MM/YYYY'
+       })
+    },
+    beforeDestroy(){
+       $('.ffinal, .finicio').datetimepicker('remove')
+    },
     methods: {
         abrirModal(id) {
             if (id != -1) {
@@ -186,4 +194,8 @@ export default {
 
 }
 </script>
+<style>
+
+</style>
+
 
