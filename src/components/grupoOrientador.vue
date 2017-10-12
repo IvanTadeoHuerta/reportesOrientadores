@@ -1,18 +1,23 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <!--Formulario de búsqueda -->
-                <div class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <input type="text" class="form-control" placeholder="Buscar alumno">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                      <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                  </span>
-                </div>
-              <!--Fin formulario de búsqueda -->
-       </div>
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <button class="btn btn-primary col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo alumno
+        </button>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+        <!--Formulario de búsqueda -->
+        <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <input type="text" class="form-control" placeholder="Buscar alumno">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+        <!--Fin formulario de búsqueda -->
+      </div>
     </div>
     <br>
     <div class="row">
@@ -25,8 +30,9 @@
                 <th>Nombre del alumno</th>
                 <th>Nombre del tutor</th>
                 <th>Reporte</th>
+                <th>Avisos</th>
                 <th>Historial</th>
-                <th>Actualizar datos</th>
+                <th>Actualizar</th>
                 <th>Status</th>
               </tr>
             </thead>
@@ -37,6 +43,11 @@
                 <td>Tutor registrado 1</td>
                 <td>
                   <button class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-warning">
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
                 </td>
@@ -65,6 +76,11 @@
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
                 </td>
+                 <td>
+                  <button type="button" class="btn btn-warning">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                </td>
                 <td>
                   <button class="btn btn-default">
                     <span class="glyphicon glyphicon-th-list"></span>
@@ -87,6 +103,11 @@
                 <td>Tutor registrado 3</td>
                 <td>
                   <button class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                </td>
+                 <td>
+                  <button type="button" class="btn btn-warning">
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
                 </td>
@@ -115,6 +136,11 @@
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
                 </td>
+                 <td>
+                  <button type="button" class="btn btn-warning">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                </td>
                 <td>
                   <button class="btn btn-default">
                     <span class="glyphicon glyphicon-th-list"></span>
@@ -137,6 +163,11 @@
                 <td>Tutor registrado 5</td>
                 <td>
                   <button class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                </td>
+                 <td>
+                  <button type="button" class="btn btn-warning">
                     <span class="glyphicon glyphicon-plus"></span>
                   </button>
                 </td>
