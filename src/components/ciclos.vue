@@ -27,7 +27,7 @@
                                     <td>1</td>
                                     <td>2015 - 2016</td>
                                     <td>
-                                        <router-link to="/home/ciclos/grupos/1" v-on:click.native="clickGrupo()">Ir a grupos</router-link>
+                                        <router-link to="/home/ciclos/grupos/1" >Ir a grupos</router-link>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary" @click="abrirModal(1)">
@@ -44,7 +44,7 @@
                                     <td>2</td>
                                     <td>2016 - 2017</td>
                                     <td>
-                                        <router-link to="/home/ciclos/grupos/2" v-on:click.native="clickGrupo()">Ir a grupos</router-link>
+                                        <router-link to="/home/ciclos/grupos/2" >Ir a grupos</router-link>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary" @click="abrirModal(2)">
@@ -61,7 +61,7 @@
                                     <td>3</td>
                                     <td>2017 - 2018</td>
                                     <td>
-                                        <router-link to="/home/ciclos/grupos/3" >Ir a grupos</router-link>
+                                        <router-link to="/home/ciclos/grupos/3">Ir a grupos</router-link>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary" @click="abrirModal(3)">
@@ -78,7 +78,7 @@
                                     <td>4</td>
                                     <td>2018 - 2019</td>
                                     <td>
-                                        <router-link to="/home/ciclos/grupos/4" v-on:click.native="clickGrupo()">Ir a grupos</router-link>
+                                        <router-link to="/home/ciclos/grupos/4" >Ir a grupos</router-link>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary" @click="abrirModal(4)">
@@ -95,7 +95,7 @@
                                     <td>5</td>
                                     <td>2019 - 2020</td>
                                     <td>
-                                        <router-link to="/home/ciclos/grupos/5" v-on:click.native="clickGrupo()">Ir a grupos</router-link>
+                                        <router-link to="/home/ciclos/grupos/5">Ir a grupos</router-link>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary" @click="abrirModal(5)">
@@ -126,7 +126,19 @@
                             </h4>
                         </div>
                         <div class="modal-body table-responsive" style="overflow-x:auto; max-height: 400px; overflow-y:auto;">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <label for="finicio">Fecha inicio</label>
+                                        <input type="text" class="form-control" name="finicio" value="">
+                                    </div>
 
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <label for="ffinal">Fecha final</label>
+                                        <input type="text" class="form-control" name="ffinal" value="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -166,9 +178,9 @@ export default {
 
         }
     },
-    watch:{
-        '$route.name'(){
-           this.seccionCiclos = this.$route.name == 'ciclos' ? true : false
+    watch: {
+        '$route.name'() {
+            this.seccionCiclos = this.$route.name == 'ciclos' ? true : false
         }
     }
 
