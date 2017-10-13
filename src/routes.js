@@ -34,14 +34,21 @@ const routes = [
                 component: Orientadores
             },
             {
-                path: 'historial/:id', 
-                name: 'historial', 
-                component: Historial 
+                path: 'historial/:idEstudiante',
+                name: 'historial',
+                component: Historial
             },
             {
                 path: 'grupo/:id',
                 name: 'grupo',
-                component: Grupo
+                component: Grupo,
+                children: [
+                    {
+                        path: 'historial/:idEstudiante',
+                        name: 'historialOrientador',
+                        component: Historial
+                    }
+                ]
             }
 
         ]
