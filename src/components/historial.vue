@@ -8,7 +8,6 @@
                 <a data-toggle="tab" href="#avisos">Avisos (2)</a>
             </li>
         </ul>
-
         <div class="tab-content">
             <div id="reportes" class="tab-pane fade in active">
                 <table class="table">

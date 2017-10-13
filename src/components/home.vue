@@ -47,8 +47,8 @@ export default {
           case 'orientadores':
             this.tituloContenido = 'Orientadores'
           break;
-          case 'estudiante':
-            this.tituloContenido = 'Datos del estudiante '
+          case 'historial':
+            this.tituloContenido = 'Historial del estudiante '
           break;
         }
     }

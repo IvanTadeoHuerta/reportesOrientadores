@@ -25,10 +25,10 @@
                     </a>
                     <ul class="nav nav-second-level">
                         <li>
-                           <router-link to="/home/estudiante/Juan"  active-class="active">Juan Pérez García</router-link>
+                           <router-link to="/home/historial/1"  active-class="active">Juan Pérez García</router-link>
                         </li>
                         <li>
-                           <router-link to="/home/estudiante/Luis"  active-class="active">Luis Magno</router-link>
+                           <router-link to="/home/historial/2"  active-class="active">Luis Magno</router-link>
                         </li>
                     </ul>
                 </li>
