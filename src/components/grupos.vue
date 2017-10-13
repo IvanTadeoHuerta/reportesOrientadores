@@ -201,7 +201,7 @@
 
 <script>
 export default {
-  name: 'grupos',
+  name: 'grupos',  
   data() {
     return {
       titulo: '',

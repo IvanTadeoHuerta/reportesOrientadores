@@ -194,7 +194,10 @@
         </div>
       </div>
     </div>
-
+    <div v-show="seccion != 'list'">
+        <a href="#" @click.prevent="verListaGrupo()"><span class="glyphicon glyphicon-chevron-left"></span>Regresar a la lista</a>
+    </div>
+    <br>
     <historial v-show="seccion == 'historial'"></historial>
     <reporte v-show="seccion == 'reporte'"></reporte>
   </div>
@@ -215,6 +218,9 @@ export default {
     },
     reporte: function(){
       this.seccion = 'reporte'
+    },
+    verListaGrupo: function(){
+       this.seccion = 'list'
     }
   },
   components:{
