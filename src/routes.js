@@ -41,14 +41,7 @@ const routes = [
             {
                 path: 'grupo/:id',
                 name: 'grupo',
-                component: Grupo,
-                children: [
-                    {
-                        path: 'historial/:idEstudiante',
-                        name: 'historialOrientador',
-                        component: Historial
-                    }
-                ]
+                component: Grupo
             }
 
         ]
