@@ -43,7 +43,7 @@
                   <td>Alumnno registrado 1</td>
                   <td>Tutor registrado 1</td>
                   <td>
-                    <button class="btn btn-success">
+                    <button class="btn btn-success" @click="reporte()">
                       <span class="glyphicon glyphicon-plus"></span>
                     </button>
                   </td>
@@ -73,7 +73,7 @@
                   <td>Alumnno registrado 2</td>
                   <td>Tutor registrado 2</td>
                   <td>
-                    <button class="btn btn-success">
+                    <button class="btn btn-success" @click="reporte()">
                       <span class="glyphicon glyphicon-plus"></span>
                     </button>
                   </td>
@@ -103,7 +103,7 @@
                   <td>Alumnno registrado 3</td>
                   <td>Tutor registrado 3</td>
                   <td>
-                    <button class="btn btn-success">
+                    <button class="btn btn-success" @click="reporte()">
                       <span class="glyphicon glyphicon-plus"></span>
                     </button>
                   </td>
@@ -133,7 +133,7 @@
                   <td>Alumnno registrado 4</td>
                   <td>Tutor registrado 4</td>
                   <td>
-                    <button class="btn btn-success">
+                    <button class="btn btn-success" @click="reporte()">
                       <span class="glyphicon glyphicon-plus"></span>
                     </button>
                   </td>
@@ -163,7 +163,7 @@
                   <td>Alumnno registrado 5</td>
                   <td>Tutor registrado 5</td>
                   <td>
-                    <button class="btn btn-success">
+                    <button class="btn btn-success" @click="reporte()">
                       <span class="glyphicon glyphicon-plus"></span>
                     </button>
                   </td>
@@ -194,12 +194,14 @@
         </div>
       </div>
     </div>
-    
+
     <historial v-show="seccion == 'historial'"></historial>
+    <reporte v-show="seccion == 'reporte'"></reporte>
   </div>
 </template>
 <script>
 import Historial from './historial.vue'
+import Reporte from './reporte.vue'
 export default {
   name: 'grupo',
   data(){
@@ -210,10 +212,14 @@ export default {
   methods:{
     verHistorial: function(){
       this.seccion = 'historial'
+    },
+    reporte: function(){
+      this.seccion = 'reporte'
     }
   },
   components:{
-    Historial
+    Historial,
+    Reporte
   }
 
 }
