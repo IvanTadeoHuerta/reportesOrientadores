@@ -1,4 +1,5 @@
 <template>
+ 
   <div>
     <div v-show="seccion == 'list'">
       <div class="row">
@@ -21,6 +22,25 @@
         </div>
       </div>
       <br>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <button class="btn btn-success col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Reporte a seleccionados
+          </button>
+        </div>
+         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <button class="btn btn-warning col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Aviso a seleccionados
+          </button>
+        </div>
+         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <button class="btn btn-danger col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              &nbsp;&nbsp;Dar de baja
+          </button>
+        </div>
+      </div>
+
       <br>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -41,7 +61,7 @@
               </thead>
               <tfoot>
                 <tr>
-                  <th colspan="9">Total de alumnos seleccionados: {{ seleccionados | alumnosSeleccionados }}</th>                 
+                  <th colspan="9">Total de alumnos seleccionados: {{ seleccionados | alumnosSeleccionados }}</th>
                 </tr>
               </tfoot>
               <tbody>
@@ -214,6 +234,7 @@
     <historial v-show="seccion == 'historial'"></historial>
     <reporte v-show="seccion == 'reporte'"></reporte>
   </div>
+
 </template>
 <script>
 import Historial from './historial.vue'
