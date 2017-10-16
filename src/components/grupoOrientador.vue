@@ -21,13 +21,15 @@
         </div>
       </div>
       <br>
+      <br>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="table-responsive">
             <table class="table table-striped table-bordered">
               <thead>
                 <tr>
-                  <th>#</th>
+                  <th><input type="checkbox"></th>
+                  <th>N.L.</th>
                   <th>Nombre del alumno</th>
                   <th>Nombre del tutor</th>
                   <th>Reporte</th>
@@ -37,8 +39,14 @@
                   <th>Status</th>
                 </tr>
               </thead>
+              <tfoot>
+                <tr>
+                  <th colspan="9">Total de alumnos seleccionados: {{ seleccionados | alumnosSeleccionados }}</th>                 
+                </tr>
+              </tfoot>
               <tbody>
                 <tr>
+                  <td><input type="checkbox"></td>
                   <td>1</td>
                   <td>Alumnno registrado 1</td>
                   <td>Tutor registrado 1</td>
@@ -69,6 +77,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td><input type="checkbox"></td>
                   <td>2</td>
                   <td>Alumnno registrado 2</td>
                   <td>Tutor registrado 2</td>
@@ -99,6 +108,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td><input type="checkbox"></td>
                   <td>3</td>
                   <td>Alumnno registrado 3</td>
                   <td>Tutor registrado 3</td>
@@ -129,6 +139,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td><input type="checkbox"></td>
                   <td>4</td>
                   <td>Alumnno registrado 4</td>
                   <td>Tutor registrado 4</td>
@@ -159,6 +170,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td><input type="checkbox"></td>
                   <td>5</td>
                   <td>Alumnno registrado 5</td>
                   <td>Tutor registrado 5</td>
@@ -195,7 +207,8 @@
       </div>
     </div>
     <div v-show="seccion != 'list'">
-        <a href="#" @click.prevent="verListaGrupo()"><span class="glyphicon glyphicon-chevron-left"></span>Regresar a la lista</a>
+      <a href="#" @click.prevent="verListaGrupo()">
+        <span class="glyphicon glyphicon-chevron-left"></span>Regresar a la lista</a>
     </div>
     <br>
     <historial v-show="seccion == 'historial'"></historial>
@@ -207,27 +220,40 @@ import Historial from './historial.vue'
 import Reporte from './reporte.vue'
 export default {
   name: 'grupo',
-  data(){
-    return{
-      seccion: 'list'
+  data() {
+    return {
+      seccion: 'list',
+      seleccionados: 0,
     }
   },
-  methods:{
-    verHistorial: function(){
+  methods: {
+    verHistorial: function() {
       this.seccion = 'historial'
     },
-    reporte: function(){
+    reporte: function() {
       this.seccion = 'reporte'
     },
-    verListaGrupo: function(){
-       this.seccion = 'list'
+    verListaGrupo: function() {
+      this.seccion = 'list'
     }
   },
-  components:{
+  filters: {
+      alumnosSeleccionados(cantidad){
+        return cantidad == 5 ?  'Todos' :cantidad
+      }     
+                  
+  },
+  components: {
     Historial,
     Reporte
   }
 
 }
 </script>
+<style scoped>
+.puntero {
+  cursor: pointer
+}
+</style>
+
 
