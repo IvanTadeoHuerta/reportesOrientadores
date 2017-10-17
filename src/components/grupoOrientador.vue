@@ -245,7 +245,7 @@
             </h4>
           </div>
           <div class="modal-body" style="overflow-x:auto; max-height: 400px; overflow-y:auto;">
-
+                <alumno></alumno>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
@@ -260,6 +260,7 @@
 <script>
 import Historial from './historial.vue'
 import Reporte from './reporte.vue'
+import Alumno from './alumno.vue'
 export default {
   name: 'grupo',
   data() {
@@ -319,7 +320,8 @@ export default {
   },
   components: {
     Historial,
-    Reporte
+    Reporte,
+    Alumno
   }
 
 }
