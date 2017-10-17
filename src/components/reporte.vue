@@ -44,7 +44,7 @@
                     <br>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <button class="btn btn-default btn-block">Cancelar</button>
+                    <button class="btn btn-default btn-block" @click.prevent="cancelarAccion()">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -57,7 +57,13 @@ export default {
         return{
             fecha: moment(new Date()).format('YYYY-MM-DD')
         }
+    },
+    methods:{
+        cancelarAccion(){
+            this.$emit('cancelarAccion')
+        }
     }
+
 }
 </script>
 

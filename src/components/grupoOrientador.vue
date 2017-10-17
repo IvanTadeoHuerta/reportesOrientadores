@@ -232,8 +232,8 @@
         <span class="glyphicon glyphicon-chevron-left"></span>Regresar a la lista</a>
     </div>
     <br>
-    <historial v-show="seccion == 'historial'"></historial>
-    <reporte v-show="seccion == 'reporte'"></reporte>
+    <historial v-show="seccion == 'historial'" ></historial>
+    <reporte v-show="seccion == 'reporte'" @cancelarAccion="verListaGrupo()"></reporte>
   </div>
 </template>
 <script>
