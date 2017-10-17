@@ -20,7 +20,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <button class="btn btn-danger col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            &nbsp;&nbsp;Dar de baja
+             <span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;Baja seleccionados
           </button>
         </div>
       </div>
@@ -93,7 +93,7 @@
                   </td>
                   <td>
                     <button class="btn btn-danger">
-                      Dar de baja
+                      <span class="glyphicon glyphicon-minus"></span>
                     </button>
                   </td>
                 </tr>
@@ -124,7 +124,7 @@
                   </td>
                   <td>
                     <button class="btn btn-danger">
-                      Dar de baja
+                       <span class="glyphicon glyphicon-minus"></span>
                     </button>
                   </td>
                 </tr>
@@ -155,7 +155,7 @@
                   </td>
                   <td>
                     <button class="btn btn-danger">
-                      Dar de baja
+                         <span class="glyphicon glyphicon-minus"></span>
                     </button>
                   </td>
                 </tr>
@@ -186,7 +186,7 @@
                   </td>
                   <td>
                     <button class="btn btn-danger">
-                      Dar de baja
+                        <span class="glyphicon glyphicon-minus"></span>
                     </button>
                   </td>
                 </tr>
@@ -217,7 +217,7 @@
                   </td>
                   <td>
                     <button class="btn btn-danger">
-                      Dar de baja
+                        <span class="glyphicon glyphicon-minus"></span>
                     </button>
                   </td>
                 </tr>
