@@ -49,7 +49,7 @@
             <table class="table table-striped table-bordered">
               <thead>
                 <tr>
-                  <th><input type="checkbox"></th>
+                  <th><input type="checkbox" v-model="checkedAll" @click="seleccionarTodos()"></th>
                   <th>N.L.</th>
                   <th>Nombre del alumno</th>
                   <th>Nombre del tutor</th>
@@ -62,12 +62,12 @@
               </thead>
               <tfoot>
                 <tr>
-                  <th colspan="9">Total de alumnos seleccionados: {{ seleccionados | alumnosSeleccionados }}</th>
+                  <th colspan="9">Total de alumnos seleccionados: {{ seleccionados.length | alumnosSeleccionados }}</th>
                 </tr>
               </tfoot>
               <tbody>
                 <tr>
-                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"  value="alumno1" v-model="seleccionados"></td>
                   <td>1</td>
                   <td>Alumnno registrado 1</td>
                   <td>Tutor registrado 1</td>
@@ -98,7 +98,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox" value="alumno2" v-model="seleccionados"></td>
                   <td>2</td>
                   <td>Alumnno registrado 2</td>
                   <td>Tutor registrado 2</td>
@@ -129,7 +129,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox" value="alumno3" v-model="seleccionados"></td>
                   <td>3</td>
                   <td>Alumnno registrado 3</td>
                   <td>Tutor registrado 3</td>
@@ -160,7 +160,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox" value="alumno4" v-model="seleccionados"></td>
                   <td>4</td>
                   <td>Alumnno registrado 4</td>
                   <td>Tutor registrado 4</td>
@@ -191,7 +191,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox" value="alumno5" v-model="seleccionados"></td>
                   <td>5</td>
                   <td>Alumnno registrado 5</td>
                   <td>Tutor registrado 5</td>
@@ -244,7 +244,8 @@ export default {
   data() {
     return {
       seccion: 'list',
-      seleccionados: 0,
+      checkedAll: false,
+      seleccionados: [],
     }
   },
   methods: {
@@ -256,6 +257,16 @@ export default {
     },
     verListaGrupo: function() {
       this.seccion = 'list'
+    },
+    seleccionarTodos: function(){
+        if(this.checkedAll){
+          this.seleccionados = []
+           for(let i=1; i<=5; i++){
+              this.seleccionados.push('alumno'+i)
+           }
+        }else{
+          this.seleccionados = []
+        }
     }
   },
   filters: {
@@ -263,6 +274,15 @@ export default {
         return cantidad == 5 ?  'Todos' :cantidad
       }     
                   
+  },
+  watch:{
+      seleccionados(){
+          if(this.seleccionados.length == 5){
+            this.checkedAll = true
+          }else{
+            this.checkedAll = false
+          }
+      }
   },
   components: {
     Historial,
