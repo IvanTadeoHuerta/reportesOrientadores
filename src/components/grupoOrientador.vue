@@ -3,7 +3,7 @@
     <div v-show="seccion == 'list'">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-          <button class="btn btn-primary col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <button class="btn btn-primary col-xs-12 col-sm-12 col-md-12 col-lg-12" @click="agregarAlumno(-1)">
             <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nuevo alumno
           </button>
         </div>
@@ -87,7 +87,7 @@
                     </button>
                   </td>
                   <td>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" @click="agregarAlumno(1)">
                       <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                   </td>
@@ -118,7 +118,7 @@
                     </button>
                   </td>
                   <td>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" @click="agregarAlumno(2)">
                       <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                   </td>
@@ -149,7 +149,7 @@
                     </button>
                   </td>
                   <td>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" @click="agregarAlumno(3)">
                       <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                   </td>
@@ -180,7 +180,7 @@
                     </button>
                   </td>
                   <td>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" @click="agregarAlumno(4)">
                       <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                   </td>
@@ -206,12 +206,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="btn btn-default" @click="verHistorial(1)">
+                    <button class="btn btn-default" @click="verHistorial(5)">
                       <span class="glyphicon glyphicon-th-list"></span>
                     </button>
                   </td>
                   <td>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" @click="agregarAlumno(5)">
                       <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                   </td>
@@ -234,6 +234,27 @@
     <br>
     <historial v-show="seccion == 'historial'" ></historial>
     <reporte v-show="seccion == 'reporte'" @cancelarAccion="verListaGrupo()"></reporte>
+
+    <!--Inicio modal de  para alumnos -->
+    <div id="modalAlumnos" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">
+              <b>{{titulo}}</b>
+            </h4>
+          </div>
+          <div class="modal-body" style="overflow-x:auto; max-height: 400px; overflow-y:auto;">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">{{ textoBtn }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin  modal para alumnos  -->
   </div>
 </template>
 <script>
@@ -246,6 +267,8 @@ export default {
       seccion: 'list',
       checkedAll: false,
       seleccionados: [],
+      textoBtn: '',
+      titulo: ''
     }
   },
   methods: {
@@ -267,7 +290,17 @@ export default {
         }else{
           this.seleccionados = []
         }
-    }
+    },
+    agregarAlumno: function(identificardor){
+      if(identificardor == -1){
+        this.titulo = 'Agregar alumno'
+        this.textoBtn = 'Agregar al grupo'
+      }else{
+        this.titulo = 'Actualizar información'
+        this.textoBtn = 'Actualizar'
+      }
+      $('#modalAlumnos').modal('show')
+    } 
   },
   filters: {
       alumnosSeleccionados(cantidad){
