@@ -6,9 +6,10 @@ import App from './App.vue'
 import routes from './routes'
 import  { store }  from './store/store'
 import  mensajes from './validator/validaciones'
-
+import Alerta from './plugins/alerta'
 
 Validator.updateDictionary(mensajes)
+Vue.use(Alerta)
 Vue.use(VeeValidate)
 Vue.use(VueRouter)
 

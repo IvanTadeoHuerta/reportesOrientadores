@@ -35,7 +35,7 @@
                                         </button>
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger">
+                                        <button class="btn btn-danger" @click="eliminar()">
                                             <span class="glyphicon glyphicon-trash"></span>
                                         </button>
                                     </td>
@@ -52,7 +52,7 @@
                                         </button>
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger">
+                                        <button class="btn btn-danger" @click="eliminar()">
                                             <span class="glyphicon glyphicon-trash"></span>
                                         </button>
                                     </td>
@@ -69,7 +69,7 @@
                                         </button>
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger">
+                                        <button class="btn btn-danger" @click="eliminar()">
                                             <span class="glyphicon glyphicon-trash"></span>
                                         </button>
                                     </td>
@@ -86,7 +86,7 @@
                                         </button>
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger">
+                                        <button class="btn btn-danger" @click="eliminar()">
                                             <span class="glyphicon glyphicon-trash"></span>
                                         </button>
                                     </td>
@@ -103,7 +103,7 @@
                                         </button>
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger">
+                                        <button class="btn btn-danger" @click="eliminar()">
                                             <span class="glyphicon glyphicon-trash"></span>
                                         </button>
                                     </td>
@@ -181,6 +181,9 @@ export default {
 
             $('#modalCiclos').modal('show')
 
+        },
+        eliminar(){
+            //this.$alerta.info('ejemplo','info','<b>Ocurrio algo mal ejemplo</b>')
         }
     },
     watch: {
